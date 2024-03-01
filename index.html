@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux de combat au tour par tour</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id ="lieudujeu">
+
+    <div id ="commencerlapartie"> 
+        <button id="newgame" type="button" disabled>Commencer la partie</button> 
+    </div>
+
+    <div id ="Arene">
+
+        <div class="joueur1" >
+
+            <div class="haut">
+                <H1 class="player1"> Joueur 1 </H1>
+                <div class="j1"> 
+                    <img class="perso" src="" alt="">
+                </div>
+            </div>
+
+            <div class="personnage">
+
+                <div class="Guerrier" id="1">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div > <p>25%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">10%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau"> 15% </p> </div>
+                    </div>
+                    <p class="nom">Galaad</p>
+                </div>
+
+                <div class="Mage" id="1">
+                    <div class="compet">
+                        <div > <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div > <p class="niveau">20%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">10%</p></div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau">20%</p> </div>
+                    </div>
+                    <p class="nom">Merlin</p>
+                </div>
+
+                <div class="Pretre" id="1">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div> <p class="niveau">15%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""></div>
+                        <div> <p class="niveau">10%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau">30%</p> </div>
+                    </div>
+                    <p class="nom">Frere Tuck</p>
+                </div>
+
+                <div class="Archer" id="1">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div> <p class="niveau">20%</p></div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">5%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau" >30%</p> </div>
+                    </div>
+                    <p class="nom">Robin des bois</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="joueur2" >
+
+            <div class="haut2">
+                <H1 class="player2">Joueur 2</H1>
+                <div class="j1"> 
+                    <img class="perso2" src="" alt="">
+                </div>
+            </div>
+
+           <div class="personnage">
+
+                <div class="Guerrier" id="2">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div> <p class="niveau">25%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">10%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau"> 15% </p> </div>
+                    </div>
+                    <p class="nom">Galaad</p>
+                </div>
+
+                <div class="Mage" id="2">
+                    <div class="compet">
+                        <div class=""> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div class=""> <p class="niveau">20%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">10%</p></div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau">20%</p> </div>
+                    </div>
+                    <p class="nom">Merlin</p>
+                </div>
+
+                <div class="Pretre" id="2">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div> <p class="niveau">15%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""></div>
+                        <div> <p class="niveau">10%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau">30%</p> </div>
+                    </div>
+                    <p class="nom">Frere Tuck</p>
+                </div>
+
+                <div class="Archer" id="2">
+                    <div class="compet">
+                        <div> <img class="action" src="img/attaque.png" alt=""> </div>
+                        <div> <p class="niveau">20%</p></div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/defense.png" alt=""> </div>
+                        <div> <p class="niveau">5%</p> </div>
+                    </div>
+                    <div class="compet">
+                        <div> <img class="action" src="img/capacite.png" alt=""> </div>
+                        <div> <p class="niveau" >30%</p> </div>
+                    </div>
+                    <p class="nom">Robin des bois</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id ="zonedecombat">
+        <div id="ring">
+            <div id="J1">
+                <div class="P1"> <img class="persof1" src="" alt=""></div>
+                <div class="vie1"></div>
+                <div class="nomJ1"> Nom personnage</div>
+                <form class="manette" action="">
+                    <button id ="attaquer1" type="button"> Attaquer </button>
+                    <button id ="capacitespe1" type="button" disabled> Capacité spéciale </button>
+                </form>
+            </div>
+            <div id="J2">
+                <div class="P2"> <img class="persof2" id="grise"  src="" alt=""></div>
+                <div class="vie2"></div>
+                <div class="nomJ2"> Nom personnage</div>
+                <div class="nomperso"></div>
+                <form class="manette2" action="">
+                    <button id ="attaquer2" type="button" disabled> Attaquer </button>
+                    <button id ="capacitespe2" type="button" disabled> Capacité spéciale </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class = "gameOver">
+        <div class="winnerIs"></div>
+        <input class="replay" type="button" onclick="window.location.reload(false)" value="Replay!!!"/>
+     </div>
+  
+    <script src="script/script.js"></script>
+</body>
+</html>

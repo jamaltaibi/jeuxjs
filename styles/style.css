@@ -1,0 +1,303 @@
+
+/* Format Oridinateur */
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image:url(../img/fond.png);
+    background-position: center;
+    background-size: cover;
+}
+/* Page d'accueil */
+#commencerlapartie{
+    background-color: wheat;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#newgame{
+    background-color:chocolate;
+    font-size: 10pt;
+}
+#Arene{
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.joueur1,.joueur2{
+    height: 95vh ;
+    width: 49.5vw;
+    border:0.1rem solid black;
+}
+.haut,.haut2{
+    height: 65vh;
+    width: 49.5vw;
+    margin-top: 0;
+}
+.j1{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perso,.perso2{
+    height: 50vh;
+}
+.player1,.player2{
+    margin: 0;
+    height:10vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personnage{
+    height: 30vh;
+    width: 49.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.Guerrier{
+    background-color:#8A4B25;
+    background-image:url(../img/guerrier.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0.5rem solid black;
+    height: 27vh;
+    width: 10vw;
+    transition: 1s ease;
+}
+.Mage{
+    background-color: #8A4B25;
+    background-image: url(../img/mage.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0.5rem solid black;
+    height: 27vh;
+    width: 10vw;
+    transition: 1s ease;
+}
+.Pretre{
+    background-color: #8A4B25;
+    background-image: url(../img/pretre.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0.5rem solid black;
+    height: 27vh;
+    width: 10vw;
+    transition: 1s ease;   
+}
+.Archer{
+    background-color: #8A4B25;
+    background-image: url(../img/Archer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0.5rem solid black;
+    height: 27vh;
+    width: 10vw;
+    transition: 1s ease;
+    
+}
+.Guerrier:hover,.Mage:hover,.Pretre:hover,.Archer:hover{
+    width: 75%; 
+    font-size:200%;
+}
+.nom{
+    font-size:1.5em;
+    font-weight: bold;
+    position: relative;
+    color: wheat;
+}
+.compet{
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.action{
+    height: 2vh;
+}
+p{
+    font-size: 10pt;
+    margin: 0;
+}
+/* zone de combat */
+#zonedecombat{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-image: url(../img/ring3.png);
+    background-position: center ;
+    background-size: cover;
+}
+
+#ring{
+    height: 98vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+#J1,#J2{
+    height: 98vh;
+    width: 45vw;
+}
+.P1,.P2{
+    height: 80vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.persof1,.persof2{
+    height: 70vh;
+} 
+
+button{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.vie1,.vie2{
+    background-color: red;
+    height: 2vh;
+    width: 100%;
+}
+
+.nomJ1,.nomJ2{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(14, 2, 2);
+    
+}
+
+.manette,.manette2{
+   height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#attaquer1,#attaquer2{
+    background-color:blue;
+}
+
+#capacitespe1,#capacitespe2{
+    background-color: green;}
+#grise{
+    filter: grayscale(100%);
+}
+
+ /* Fin de Partie ! */
+.gameOver{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+    color: black;
+}
+.replay{
+    height: 10vh;
+    border: 20px inset #9c6625;
+    font-size: 2vh;
+    background-color:wheat;
+    border-radius: 50%;
+}
+.winnerIs{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size:5vh;
+    font-style:italic;
+    font-weight:bolder;
+    color:black;
+    text-shadow: 5px 16px 2px rgba(206,89,55,0.83);
+}
+/* Format Telephone */
+@media screen and (max-width: 580px) {
+
+    #newgame{
+        font-size: 5pt;
+        text-align: justify;
+    }
+    .personnage{
+        flex-wrap: wrap-reverse;
+    }
+    .Guerrier{
+        border: 0.5rem solid black;
+        height: 10vh;
+        width: 20vw;
+    }
+    .Mage{
+        border: 0.5rem solid black;
+        height: 10vh;
+        width: 20vw;
+    }
+    .Pretre{
+        border: 0.5rem solid black;
+        height: 10vh;
+        width: 20vw;  
+    }
+    .Archer{
+        border: 0.5rem solid black;
+        height: 10vh;
+        width: 20vw;
+        
+    }
+    .nom{
+        font-size:0.5em;
+    }
+    .attaque{
+        height: 2vh;
+        
+    }
+    .defense{
+        height: 2vh;
+    }
+    .capspe{
+        height: 2vh;
+    }
+    .action{
+        height: 1vh;
+    }
+    .niveau{
+        font-size: 8pt;
+        margin: 0;
+    }
+    .Guerrier:hover,.Mage:hover,.Pretre:hover,.Archer:hover{
+        width: 100%; 
+        font-size:200%;
+    }
+    .haut,.haut2{
+        margin-top: 0;
+    }
+    .perso,.perso2{
+        height: 50vh;
+    }
+    .persof1,.persof2{
+        height: 40vh;
+        width: 50vw;
+    } 
+    .nomJ1,.nomJ2{
+        font-size: 1em;
+    }
+}
