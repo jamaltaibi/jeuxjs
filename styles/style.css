@@ -11,9 +11,10 @@ body{
 /* Page d'accueil */
 #commencerlapartie{
     background-color: wheat;
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 #newgame{
@@ -21,19 +22,19 @@ body{
     font-size: 10pt;
 }
 #Arene{
-    height: 95vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
 }
 
 .joueur1,.joueur2{
-    height: 95vh ;
+    height: 90vh ;
     width: 49.5vw;
     border:0.1rem solid black;
 }
 .haut,.haut2{
-    height: 65vh;
+    height: 55vh;
     width: 49.5vw;
     margin-top: 0;
 }
@@ -141,7 +142,7 @@ p{
 }
 
 #ring{
-    height: 98vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -164,8 +165,7 @@ p{
 } 
 
 button{
-    height: 5vh;
-    width: 10vw;
+    height: 5vw;
     border-radius: 50%;
 }
 
@@ -294,7 +294,7 @@ button{
         height: 50vh;
     }
     .persof1,.persof2{
-        height: 40vh;
+        height: 60vh;
         width: 50vw;
     } 
     .nomJ1,.nomJ2{
