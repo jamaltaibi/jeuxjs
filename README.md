@@ -31,11 +31,6 @@ Bienvenue dans mon projet de jeu de combat au tour par tour ! Ce projet consiste
     ```bash
     git clone https://github.com/jamaltaibi/jeuxjs.git
     ```
-2. Accédez au dossier du projet :
-    ```bash
-    cd votre-projet-combat-tour-par-tour
-    ```
-3. Ouvrez `index.html` dans votre navigateur.
 
 ## Auteur
 
